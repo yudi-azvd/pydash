@@ -24,7 +24,7 @@ class R2ARandom(IR2A):
 
     def __init__(self, id):
         IR2A.__init__(self, id)
-        self.parsed_mpd = ''
+        self.parsed_mpd = None
         self.qi = []
 
     def handle_xml_request(self, msg):
@@ -55,8 +55,6 @@ class R2ARandom(IR2A):
 
     def handle_segment_size_response(self, msg):
 
-
-
         self.send_up(msg)
 
     def initialize(self):
@@ -64,4 +62,8 @@ class R2ARandom(IR2A):
         pass
 
     def finalization(self):
+        pass
+
+    ### Util
+    def __smooth_function(self):
         pass

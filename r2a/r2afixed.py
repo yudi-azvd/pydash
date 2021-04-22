@@ -35,14 +35,21 @@ class R2AFixed(IR2A):
 
     def handle_segment_size_request(self, msg):
         # time to define the segment quality choose to make the request
-        msg.add_quality_id(self.qi[19])
+        msg.add_quality_id(self.qi[0])
         self.send_down(msg)
 
     def handle_segment_size_response(self, msg):
+        print('>>>>>>>>>>>>>>>>>>>>>')
+        print('bit len:', msg.get_bit_length())
+        print('seg size:', msg.get_segment_size())
+        print('>>>>>>>>>>>>>>>>>>>>>\n')
+
         self.send_up(msg)
 
     def initialize(self):
         pass
 
     def finalization(self):
+        print('>>>>>>>>>>>>>>>>>>>>>\n')
+        print(self.whiteboard.get_playback_qi())
         pass
