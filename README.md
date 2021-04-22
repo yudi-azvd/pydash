@@ -13,7 +13,7 @@ de acordo com os testes.
 Esse nome ainda não me convenceu)
 
 - `MovingAverage` também tem um método que calcula
-<img src="https://render.githubusercontent.com/render/math?math=$\sigma^2_{weighted}$">
+<img style="display: inline;" src="https://render.githubusercontent.com/render/math?math=$\sigma^2_{weighted}$">
 mas ainda não foi testado.
 
 
