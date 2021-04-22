@@ -12,7 +12,8 @@ de acordo com os testes.
 (Se alguém tiver alguma ideia melhor pro nome dessa classe eu aceito sugestões.
 Esse nome ainda não me convenceu)
 
-- `MovingAverage` também tem um método que calcula $\sigma^2_{weighted}$ mas 
-ainda não foi testado.
+- `MovingAverage` também tem um método que calcula
+<img src="https://render.githubusercontent.com/render/math?math=$\sigma^2_{weighted}$">
+mas ainda não foi testado.
 
 
